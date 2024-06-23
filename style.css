@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+
+}
+body{
+    font-family: 'GT America Standard', sans-serif;
+}
+/* topbar menu adjust */
+.topbar-menu{
+  background-color: black;
+  height: 88px;
+  align-items: center;
+}
+
+.topbar-content{
+  width: 90%;
+  margin: auto;
+}
+
+.topbar-inner{
+  display: flex;
+  justify-content: space-between; 
+  height: 88px;
+  align-items: center;
+  padding-right: calc(15px * 2);
+  padding-left: calc(15px * 2);
+}
+
+/* title adjust */
+.topbar__logo-wrapper{
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.topbar__logo-wrapper a {
+  font-size:24px;
+  color: white;
+  line-height:1.5;
+  text-decoration: none;
+
+
+}
+
+
+
+#help-Content{
+  font-size: 24px;
+  padding-left: 12.8px;
+  margin-left: 12.8px;
+  border-left: 2px solid white;
+  letter-spacing: -.5px;
+  transition: all .3;
+  line-height: 23px;
+  display: inline-block;
+
+}
+/* #help-Content:hover{
+  text-decoration: underline;
+  color: white;
+} */
+
+#help-Content {
+  position: relative; /* สำหรับการกำหนดตำแหน่งให้กับ pseudo-element */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็น pointer เมื่อวางเมาส์ */
+}
+
+#help-Content::after{
+  content: ''; /* สร้าง pseudo-element ว่าง */
+  position: absolute; /* กำหนดตำแหน่งแบบ absolute */
+  left: 12.8px;
+  right: 0;
+  bottom: 0; /* กำหนดตำแหน่งใต้ข้อความ */
+  height: 1.0px; /* ความหนาของเส้นใต้ */
+  background-color: white; /* สีของเส้นใต้ */
+  transform: scaleX(0); /* ซ่อนเส้นใต้เริ่มต้น */
+  transform-origin: bottom left; /* จุดเริ่มต้นของการขยายเส้นใต้ */
+  transition: transform 0.3s ease; /* การเปลี่ยนแปลงที่ราบรื่น */
+}
+
+#help-Content:hover::after {
+  transform: scaleX(1); /* แสดงเส้นใต้เมื่อ hover */
+}
+
+
+
+/* title abstrac */
+.topbar__logo-wrapper a:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 17px;
+  width: 80px; 
+  transition: opacity 0.5s ease-in-out;
+}
+#abstract:hover{
+  opacity:0.6;
+  transition: opacity 0.5s;
+  background-color: transparent;
+  
+  
+}
+
+/* Herocontian */
+.hero-unit-large{
+  padding: 80px;
+  padding-bottom: 115px;
+  border: 1px solid red;
+}
+.hero-unit{
+  position: relative;
+  background-color: #DADBF1;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contianer{
+  padding-left: calc(15px*2);
+  padding-right: calc(15px*2);
+}
+  
+
+
+/* btn adjust class*/
+.topbar-btn{
+  margin-right: 200px;
+  font-size: 24px;
+  margin: 1rem;
+}
+.topbar-btn a{
+  padding: 6px 22px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.btnsubmit-a-request{
+  background-color: #191a1b;
+}
+.btnsubmit-a-request , .sign-in{
+  font-size:24px;
+  margin-left: 1rem;
+  text-decoration: none;
+  border: 1px #fff solid;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'GT America Standard', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.sign-in{
+  background-color: #4C5FD5;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-color: #4C5FD5;
+}
+.sign-in:hover{
+  background-color: white;
+  color: #191a1b;
+  border-color:white ;
+  transition: all .3;
+}
+
+/* section */
+.hero-unit-large{
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+.contianer-inner{
+  width: 90%;
+}
+/* title */
+.hero-title{
+  font-family: 'GT America Standard', sans-serif;
+  color: black;
+  font-size: 80px;
+  letter-spacing: -4px;
+  font-weight: 400;
+  text-size-adjust: 100%;
+
+}
+.text-center{
+  text-align: center;
+
+}
+
+/* search-box */
+.searchbox-hero-unit{
+  max-width: 720px;
+  color: white;
+}
+/* arrow-svg */
+.arrow-svg{
+  width: 28px;
+}
